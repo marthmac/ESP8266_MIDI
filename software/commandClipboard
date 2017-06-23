@@ -1,0 +1,9 @@
+service docker start
+
+sudo docker run --rm -it -v /mnt/WORKDRIVE/NetworkShare/Projects/ESP8266_MIDI/nodemcu-firmware/:/opt/nodemcu-firmware marcelstoer/nodemcu-build
+
+
+sudo docker run -e FLOAT_ONLY=1 --rm -it -v /mnt/WORKDRIVE/NetworkShare/Projects/ESP8266_MIDI/nodemcu-firmware/:/opt/nodemcu-firmware marcelstoer/nodemcu-build
+
+
+file.remove("init.lua"); node.restart()

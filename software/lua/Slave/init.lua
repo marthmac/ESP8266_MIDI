@@ -1,0 +1,5 @@
+-- print('running listFiles.lua...')
+-- dofile('listFiles.lua')
+-- print('')
+tmr.alarm(0, 2000, 0, function() tmr.stop(0) dofile('setup.lua') end )
+-- print('waiting 2 seconds, then running setup.lua')
